@@ -1,0 +1,22 @@
+{
+  "name": "just-toasty",
+  "version": "1.0.0",
+  "description": "Simple, customisable toast notifications",
+  "source": "src/index.js",
+  "main": "dist/just-toasty.umd.js",
+  "module": "dist/just-toasty.m.js",
+  "repository": "https://github.com/tiaanduplessis/just-toasty.git",
+  "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle --name toasty",
+    "dev": "microbundle watch --name toasty",
+    "format": "prettier-standard src/index.js",
+    "serve": "serve"
+  },
+  "devDependencies": {
+    "microbundle": "^0.2.4",
+    "prettier-standard": "^8.0.0",
+    "serve": "^6.4.4"
+  }
+}
