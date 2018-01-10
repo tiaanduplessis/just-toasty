@@ -1,6 +1,3 @@
-<div align="center">
-    <img width="60%" src="logo.png" alt="example">
-</div>
 <h1 align="center">just-toasty</h1>
 <div align="center">
   <strong>Simple, customisable toast notifications in under 700 bytes</strong>
