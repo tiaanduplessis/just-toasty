@@ -54,6 +54,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/just-toasty.svg)](https://greenkeeper.io/)
+
 - Using cdn: 
 
 ```html
