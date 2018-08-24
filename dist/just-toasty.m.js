@@ -6,17 +6,21 @@ function css(elem, rules) {
     });
 }
 
-function toast(content, ref) {
+function toast(content, opts) {
     var obj, obj$1;
 
     if ( content === void 0 ) content = '';
-    if ( ref === void 0 ) ref = {};
+    if ( opts === void 0 ) opts = {};
+    var ref = typeof opts === 'number' ? {
+        duration: opts
+    } : opts;
     var className = ref.className; if ( className === void 0 ) className = '';
     var duration = ref.duration; if ( duration === void 0 ) duration = 3000;
     var target = ref.target; if ( target === void 0 ) target = 'body';
     var offset = ref.offset; if ( offset === void 0 ) offset = 15;
     var styles = ref.styles; if ( styles === void 0 ) styles = {};
     var selector = ref.selector; if ( selector === void 0 ) selector = 'just-toasty';
+    var cb = ref.cb; if ( cb === void 0 ) cb = function () {};
     var ref$1 = ['top','right'];
     var vert = ref$1[0];
     var hor = ref$1[1];
@@ -25,7 +29,7 @@ function toast(content, ref) {
     elem.classList.add(selector);
     className && elem.classList.add(className);
     elem.innerHTML = content;
-    css(elem, Object.assign(( obj = {}, obj[hor] = '15px', obj.opacity = 1, obj.padding = '1em 1.5em', obj.color = '#fff', obj.background = 'rgba(0,0,10,0.8)', obj.display = 'inline-block', obj.position = 'fixed', obj.borderRadius = '.2em', obj.top = '-100px', obj.transition = 'all 0.4s ease-out', obj), styles));
+    css(elem, Object.assign(( obj = {}, obj[hor] = '15px', obj.opacity = 1, obj.padding = '1em 1.5em', obj.zIndex = 9999, obj.color = '#fff', obj.background = 'rgba(0,0,10,0.8)', obj.display = 'inline-block', obj.position = 'fixed', obj.borderRadius = '.2em', obj.top = '-100px', obj.fontFamily = 'inherit', obj.transition = 'all 0.4s ease-out', obj), styles));
     targetElem.insertBefore(elem, targetElem.firstChild);
     var topOffset = offset;
     document.querySelectorAll(("." + selector)).forEach(function (elem) {
@@ -40,6 +44,7 @@ function toast(content, ref) {
         css(elem, ( obj = {}, obj[hor] = '-' + width + 'px', obj.opacity = 0, obj));
         setTimeout(function () {
             elem.remove();
+            cb();
         }, 1000);
     }, duration);
     return elem;
