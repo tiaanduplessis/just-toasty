@@ -14,7 +14,7 @@ function css (elem, rules = {}) {
       target = 'body',
       offset = 15,
       styles = {},
-      selector = 'toast',
+      selector = 'just-toasty',
       cb = () => {}
     } = typeof opts === 'number' ? {duration: opts} : opts
 
