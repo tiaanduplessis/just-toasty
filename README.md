@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="header.png" width="60%">
+</div>
+<br>
 <h1 align="center">just-toasty</h1>
 <div align="center">
   <strong>Simple, customisable toast notifications in under 700 bytes</strong>
@@ -55,6 +59,7 @@ $ yarn add just-toasty
 
 ```js
     toasty('Hi')
+    toasty('Hi', 5000)
 
     setTimeout(function() {
         toasty('<h1>Whoop</h1>', {styles: {

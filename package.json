@@ -8,6 +8,14 @@
   "repository": "https://github.com/tiaanduplessis/just-toasty.git",
   "author": "Tiaan du Plessis",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "toast",
+    "notif",
+    "notifcation"
+  ],
   "scripts": {
     "build": "microbundle --name toasty",
     "dev": "microbundle watch --name toasty",
