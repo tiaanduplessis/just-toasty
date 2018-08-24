@@ -8,7 +8,7 @@
     <body>
         <script src="../dist/just-toasty.umd.js"></script>
         <script>
-            toasty('Hi')
+            toasty('Hi', 1000)
 
             setTimeout(function() {
                 toasty('<h1>Whoop</h1>', {styles: {
@@ -19,6 +19,8 @@
             setTimeout(function() {
                 toasty('Hi', {duration: 2000})
             }, 3000)
+
+            
 
         </script>
     </body>
