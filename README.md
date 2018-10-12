@@ -44,7 +44,7 @@
 ```html
 <script src="https://cdn.rawgit.com/tiaanduplessis/just-toasty/master/dist/just-toasty.umd.js"></script>
 <!-- Or -->
-<script src="https://unpkg.com/just-toasty/distjust-toasty.umd.js"></script>
+<script src="https://unpkg.com/just-toasty/dist/just-toasty.umd.js"></script>
 ```
 
 - Using package manager:
