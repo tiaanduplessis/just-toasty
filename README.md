@@ -58,7 +58,7 @@ $ yarn add just-toasty
 ## Usage
 
 ```js
-    toasty('Hi')
+    toasty('Hi') // If no duration is provided, the time will be calculated based on the number of words.
     toasty('Hi', 5000)
 
     setTimeout(function() {
