@@ -30,12 +30,14 @@ function toast(
     offset = 15,
     styles = {},
     selector = 'just-toasty',
+    role = 'alert',
     cb = () => { }
   } = typeof opts === 'number' ? { duration: opts } : opts
 
   const [vert, hor] = ['top', 'right']
   const targetElem = document.querySelector(target)
   const elem = document.createElement('div')
+  elem.setAttribute('role', role)
   elem.classList.add(selector)
   className && elem.classList.add(className)
   elem.innerHTML = content
