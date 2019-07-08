@@ -2713,7 +2713,7 @@ merge-stream@^1.0.1:
   dependencies:
     readable-stream "^2.0.1"
 
-microbundle@^0.11.0:
+microbundle@0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/microbundle/-/microbundle-0.11.0.tgz#266bcf4210192698c23fe3bf3581ab81d31a14d0"
   integrity sha512-Lt2f8OhC2y2uKyJ5zA8lEEiDsIAbk6yllBuoAWLIdYVIXYqOdN9mO3DI7VW7x/fw87gdnCLIJdVtpP6kaI99LA==
@@ -4401,7 +4401,7 @@ serve-handler@6.0.0:
     path-to-regexp "2.2.1"
     range-parser "1.2.0"
 
-serve@^11.0.0:
+serve@11.0.0:
   version "11.0.0"
   resolved "https://registry.yarnpkg.com/serve/-/serve-11.0.0.tgz#577f4e0f4b57058d12e3be19373f1a3d6d8826dc"
   integrity sha512-Gnyyp3JAtRUo0dRH1/YWPKbnaXHfzQBiVh9+qSUi6tyVcVA8twUP2c+GnOwsoe9Ss7dfOHJUTSA4fdWP//Y4gQ==
@@ -4604,7 +4604,7 @@ standard-engine@~9.0.0:
     minimist "^1.1.0"
     pkg-conf "^2.0.0"
 
-standard@^12.0.1:
+standard@12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/standard/-/standard-12.0.1.tgz#0fc5a8aa6c34c546c5562aae644242b24dae2e61"
   integrity sha512-UqdHjh87OG2gUrNCSM4QRLF5n9h3TFPwrCNyVlkqu31Hej0L/rc8hzKqVvkb2W3x0WMq7PzZdkLfEcBhVOR6lg==
