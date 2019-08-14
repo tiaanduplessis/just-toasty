@@ -31,13 +31,18 @@ function toast(
     styles = {},
     selector = 'just-toasty',
     role = 'alert',
+    type = 'polite',
     cb = () => { }
   } = typeof opts === 'number' ? { duration: opts } : opts
 
   const [vert, hor] = ['top', 'right']
   const targetElem = document.querySelector(target)
   const elem = document.createElement('div')
+
   elem.setAttribute('role', role)
+  elem.setAttribute('aria-live', type)
+  elem.setAttribute('aria-atomic', "true")
+
   elem.classList.add(selector)
   className && elem.classList.add(className)
   elem.innerHTML = content
