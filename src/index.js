@@ -33,7 +33,7 @@ function toast(
     role = 'alert',
     type = 'polite',
     cb = () => { }
-  } = typeof opts === 'number' ? { duration: opts } : opts
+  } = typeof opts === 'number' ? { duration: opts } : typeof opts === 'function' ? { cb: opts} : opts
 
   const [vert, hor] = ['top', 'right']
   const targetElem = document.querySelector(target)
