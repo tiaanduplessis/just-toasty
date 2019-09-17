@@ -42,8 +42,6 @@
 - Using cdn: 
 
 ```html
-<script src="https://cdn.rawgit.com/tiaanduplessis/just-toasty/master/dist/just-toasty.umd.js"></script>
-<!-- Or -->
 <script src="https://unpkg.com/just-toasty/dist/just-toasty.umd.js"></script>
 ```
 
