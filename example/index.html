@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Example</title>
-    </head>
-    <body>
-        <script src="../dist/just-toasty.umd.js"></script>
-        <script>
-            toasty('This should also work nicely.')
-            toasty('Hi', 1000)
+  <head>
+    <meta charset="utf-8" />
+    <title>Example</title>
+  </head>
+  <body>
+    <script src="../dist/just-toasty.umd.js"></script>
+    <script>
+      toasty("This should also work nicely.");
+      toasty("Hi", 1000);
 
-            setTimeout(function() {
-                toasty('<h1>Whoop</h1>', {styles: {
-                backgroundColor: '#555'
-            }})
-            }, 1000)
+      setTimeout(function () {
+        toasty("<h1>Whoop</h1>", {
+          styles: {
+            backgroundColor: "#555",
+            bottom: "-100px",
+            top: "auto",
+          },
+        });
+      }, 6000);
 
-            setTimeout(function() {
-                toasty('Hi', {duration: 2000})
-            }, 3000)
-
-            
-
-        </script>
-    </body>
+      setTimeout(function () {
+        toasty("Hi", { duration: 2000 });
+      }, 2000);
+    </script>
+  </body>
 </html>
