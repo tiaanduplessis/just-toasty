@@ -17,8 +17,8 @@
     "notifcation"
   ],
   "scripts": {
-    "preversion": "yarn lint",
-    "postversion": "yarn publish",
+    "preversion": "npm run lint",
+    "postversion": "npm run publish",
     "postpublish": "git push origin --all && git push origin --tags",
     "build": "microbundle --name toasty",
     "dev": "microbundle watch --name toasty",
