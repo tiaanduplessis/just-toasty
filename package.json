@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "preversion": "npm run lint",
-    "postversion": "npm run publish",
+    "postversion": "npm publish",
     "postpublish": "git push origin --all && git push origin --tags",
     "build": "microbundle --name toasty",
     "dev": "microbundle watch --name toasty",
