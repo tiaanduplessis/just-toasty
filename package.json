@@ -1,6 +1,6 @@
 {
   "name": "just-toasty",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Simple, customisable toast notifications",
   "source": "src/index.js",
   "main": "dist/just-toasty.umd.js",
